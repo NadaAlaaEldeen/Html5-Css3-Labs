@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom video controls</title>
+    <link rel="styleSheet" href="../style/style.css" />
+  </head>
+  <body>
+    <h1>Video With My Own Controls</h1>
+    <hr />
+    <section>
+      <div style="text-align:center"> 
+        <video 
+             id="vid" 
+             width=100% 
+             height="400px" 
+             poster="./image/frozen.jpg">
+            <source src="../resourses/video/frozen.mp4" type="video/mp4" poster="../resourses/image/frozen.jpg"  autoplay>
+          </video>
+          <input type="range" id="VidRange" value="0" style="width:50%"/>
+          <span id="current">0:00 </span>
+          <span > / </span>
+          <span id="original">0:00 </span>
+          
+          <br><br>
+          <div class="buttons">
+            <button onclick="play()" >Play</button> 
+            <button onclick="pause()">Stop</button> 
+           <button onclick="starting()"><<</button>
+           <button onclick="increase_skip()"><</button>
+           <button onclick="decrease_skip()">></button>
+           <button onclick="ending()"> >> </button>
+           volume: <input type="range" name="" id="volumeid" min="0" max="1" step="0.1" value="0.25" onchange="fetchvolume()"/> 
+           <button onclick="mute()">Mute</button>
+            <button onclick="full_screen()">Full Screen</button>
+            <!-- <button onclick="makeNormal()">Normal</button> -->
+            <br>
+            Speed: <input type="range" name="" id="speedid" min="0.5" max="16" step="1" value="2" onchange="fetchspeed()" />
+         </div>
+      </div>
+    </section>
+    
+    <section id="colo">
+      <p style="font-size: 25px" id="p1"> <b>
+        Change the 3 Color Ranges above and observe my color Change 
+    </b></p>
+      Red: <input type="range" name="" id="red" min="0" max="255" step="1" value="100" onchange="changecolor()" />
+      <br><br>
+      Green: <input type="range" name="" id="green" min="0" max="255" step="1" value="100" onchange="changecolor()" />
+      <br><br>
+      Blue: <input type="range" name="" id="blue" min="0" max="255" step="1" value="100" onchange="changecolor()" />
+      
+    </section>
+    <script src="../style/script.js"></script>
+  </body>
+</html>

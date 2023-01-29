@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pythagorean Theorem Calculator</title>
+
+</head>
+<body style="margin-left:20%;">
+<section >
+     <canvas width="600" height="340"  id="sketch"></canvas>   
+    <h1>according to pythagroras theorem</h1>
+    <math style="font:70px monospac ;color:red">
+        <mrow>
+            <mi>c</mi>
+            <mo>=</mo>
+            
+                <msqrt>
+                    <msup>
+                        <mi>a</mi>
+                        <mn>2</mn>
+                    </msup>
+                    <mo>+</mo>
+                    <msup>
+                        <mi>b</mi>
+                        <mn>2</mn>
+                    </msup>
+                </msqrt>
+        
+        </mrow>    
+    </math>
+</section>
+<!-- -------------script------------------- -->
+<script>
+    var can = document.getElementById("sketch");
+    var sketch = can.getContext("2d");
+//draw triangle    
+    sketch.beginPath();
+    sketch.moveTo(200,300);
+    sketch.lineTo(300,10);
+    sketch.lineTo(300,300);
+    sketch.lineTo(200,300);
+    sketch.strokeStyle = "red";
+    sketch.stroke();
+    sketch.fillStyle = "red";
+    sketch.fill();
+//add labels   
+    sketch.font = "30px monospac";
+    sketch.fillStyle = "black";
+    sketch.textAlign = "center";
+    sketch.fillText("c",200,200);
+    sketch.fillText("b",330,200);
+    sketch.fillText("a",250,330);
+
+    sketch.closePath();
+</script>
+</body>
+</html>

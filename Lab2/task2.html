@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=V, initial-scale=1.0">
+    <title>Web Forms validation</title>
+    <style>
+        span{display: inline;}
+        form
+        {
+            border: 2px solid rgb(143, 141, 142);
+            padding: 5px; 
+            height: 300px; 
+        }
+        button,p{ margin-left: 10px;}
+        input{
+            height: 30px;
+            width: 270px;
+            display: block;
+            margin: 10px;
+            font-size: 20px;
+        }
+        input::placeholder {
+        color: rgb(196, 202, 202);
+        font-size: 20px;
+        padding:3%;
+      }
+      
+      input:valid
+      {
+        border: 2px solid green;
+      }
+      input:invalid {
+        border: 2px solid rgb(224, 54, 54);
+        
+      }
+      input:focus {
+        border: 2px solid rgb(0, 11, 128);
+       
+        outline: none;
+      }
+
+
+      input[type="text"]:valid+.txt,
+      input[type="email"]:valid+.mail
+      {
+        display:none;
+      }
+      
+      
+
+    </style>
+</head>
+<body>
+    
+    <form action="#">
+        <h1> Change Email Address</h1>
+    <input type="text"
+           pattern="[A-Za-z]{4}" required 
+           autocomplete="off"
+           placeholder="User name"
+           name="name" 
+           id="name" 
+
+    />
+    <div class="txt">The required user name may only be a collection of 4 alphabitical characters.</div>
+    <input type="email"
+           name="email"
+           autocomplete="off"
+           placeholder="Email"
+            required 
+    />
+    <div class="mail">The required email adress may not include any special character other '@'signs.</div>
+    <button>Change</button>
+   </form>
+
+   
+</body>
+</html>
