@@ -1,0 +1,48 @@
+span{display: inline;}
+        form
+        {
+            border: 2px solid rgb(143, 141, 142);
+            padding: 5px; 
+            height: 300px; 
+        }
+        button,p{ margin-left: 10px;}
+        button
+        {
+          margin-top: 2%;
+          background-color: red;
+        }
+        input{
+            height: 30px;
+            width: 270px;
+            display: block;
+            margin: 10px;
+            font-size: 20px;
+        }
+        input::placeholder {
+        color: rgb(196, 202, 202);
+        font-size: 20px;
+        padding:3%;
+      }
+      
+      input:valid
+      {
+        border: 2px solid green;
+      }
+      input:invalid {
+        border: 2px solid rgb(224, 54, 54);
+        
+      }
+      input:focus {
+        border: 2px solid rgb(0, 11, 128);
+       
+        outline: none;
+      }
+
+
+      input[type="text"]:valid+.txt,
+      input[type="email"]:valid+.mail
+      {
+        display:none;
+      }
+      a,button{text-decoration: none;font-size:large; color:white}
+      

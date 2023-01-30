@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=V, initial-scale=1.0">
+    <link rel="styleSheet" href="style.css" />
+    <title>Lab3:HTML5&CSS3</title>
+</head>
+<body>
+    <section>
+        <h1> Change Email Address</h1>
+    <input type="text"
+           pattern="[A-Za-z]{4}" required 
+           autocomplete="off"
+           placeholder="User name"
+           name="name" 
+           id="nme" 
+
+    />
+    <div class="txt">The required user name may only be a collection of 4 alphabitical characters.</div>
+    <input type="email"
+           name="email"
+           autocomplete="off"
+           placeholder="Email"
+            required 
+            id="mail"
+    />
+    <div class="mail">The required email adress may not include any special character other '@'signs.</div>
+    <button id="btn"><a href="welcome.html" target="_blank">Change</a></button>
+    <button id="sum"> Get Sum</button>
+    <button id="bg"> Change Background</button>
+    <button onclick="getLoc()">share location</button>
+</section>
+<!-- microdata -->
+<section>
+<h2>Microdata</h2>
+<div itemscope itemtype="http://data-vocabulary.org/Organization">
+    <h3 itemprop="name">SD & Gaming CoE , ITI.</h3>
+    <span itemprop="tel">35355695</span>
+    <span itemprop="url">http://www.iti.gov.eg/</span>
+    <div itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address">
+        <span itemprop="street-address">km 28 Cairo-Alexandria Desert Road</span>
+        <span itemprop="locality">Smart Village</span>
+        <span itemprop="region">Giza</span>
+        <span itemprop="country-name">Egypt</span>
+        <span itemprop="postal-code">11371</span>
+    </div>
+    <div itemprop="geo" itemscope itemtype="http://data-vocabulary.org/Geo">
+        <span itemprop="latitude">38.5323 N</span>
+        <span itemprop="longitude">77.0040 W</span>
+    </div>
+</div>
+</section>
+   
+ <script src="script.js"></script>         
+</body>
+</html>

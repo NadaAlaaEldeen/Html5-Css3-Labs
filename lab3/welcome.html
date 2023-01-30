@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Solitreo&display=swap"
+      rel="stylesheet"
+    />
+    <title>Welcome user</title>
+    <style>
+        div
+        {
+        border: 3px solid salmon;
+        text-align: center;
+        font-family: "Solitreo", cursive;
+        font-size: x-large;
+        width: 50%;
+        position:absolute;
+        top:35%;
+        left:25%
+        }
+        span
+        {
+            color:salmon;
+        }
+
+    </style>
+</head>
+<body>
+    <script>
+       var name=localStorage.getItem("username");
+       var email=localStorage.getItem("useremail");
+       document.write(`
+       <div id="card">
+        <p> name is:<span>${name}</span></p><br>
+        <p> email is:<span>${email}</span></p>
+       </div>
+       `)
+    </script>
+</body>
+</html>
