@@ -8,4 +8,4 @@
 ### https://nadaalaaeldeen.github.io/Html5-Css3-Labs/Lab2/task2.html
 ### https://nadaalaaeldeen.github.io/Html5-Css3-Labs/Lab2/task3.html
 ## lab3
-### https://nadaalaaeldeen.github.io/Html5-Css3-Labs/Lab3/index.html
+### https://nadaalaaeldeen.github.io/Html5-Css3-Labs/lab3/index.html
